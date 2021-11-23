@@ -1,0 +1,7 @@
+Di bawah ini adalah langkah-langkah untuk menjalankan aplikasi assignment1 :
+1. Jalankan aplikasi tersebut.
+2. Setelah aplikasi dijalankan maka anda harus mengisikan nama anda
+3. Setelah pengisian nama anda, maka aplikasi akan membawa anda ke dalam menu soal-soal yang akan anda lihat.
+4. Selanjutnya anda diminta untuk mengisikan nomer soal yang ingin anda lihat dan jika anda ingin langsung keluar aplikasi anda dapat mengisinakan huruf n.
+5. Setelah anda memilih nomer soal yang ingin anda lihat anda akan ditampilkan soal yang anda pilih.
+6. setelah soal ditampilkan, maka anda akan diminta untuk mengisikan apakah anda ingin lanjut menggunakan aplikasi tersebut atau tidak.
