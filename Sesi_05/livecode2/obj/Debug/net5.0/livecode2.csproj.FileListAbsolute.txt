@@ -1,0 +1,16 @@
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode2\obj\Debug\net5.0\livecode2.csproj.AssemblyReference.cache
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode2\obj\Debug\net5.0\livecode2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode2\obj\Debug\net5.0\livecode2.AssemblyInfoInputs.cache
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode2\obj\Debug\net5.0\livecode2.AssemblyInfo.cs
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode2\obj\Debug\net5.0\livecode2.csproj.CoreCompileInputs.cache
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode2\bin\Debug\net5.0\livecode2.exe
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode2\bin\Debug\net5.0\livecode2.deps.json
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode2\bin\Debug\net5.0\livecode2.runtimeconfig.json
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode2\bin\Debug\net5.0\livecode2.runtimeconfig.dev.json
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode2\bin\Debug\net5.0\livecode2.dll
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode2\bin\Debug\net5.0\ref\livecode2.dll
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode2\bin\Debug\net5.0\livecode2.pdb
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode2\obj\Debug\net5.0\livecode2.dll
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode2\obj\Debug\net5.0\ref\livecode2.dll
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode2\obj\Debug\net5.0\livecode2.pdb
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode2\obj\Debug\net5.0\livecode2.genruntimeconfig.cache

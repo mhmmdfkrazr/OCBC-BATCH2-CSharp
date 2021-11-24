@@ -1,0 +1,16 @@
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode3\obj\Debug\net5.0\livecode3.csproj.AssemblyReference.cache
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode3\obj\Debug\net5.0\livecode3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode3\obj\Debug\net5.0\livecode3.AssemblyInfoInputs.cache
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode3\obj\Debug\net5.0\livecode3.AssemblyInfo.cs
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode3\obj\Debug\net5.0\livecode3.csproj.CoreCompileInputs.cache
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode3\bin\Debug\net5.0\livecode3.exe
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode3\bin\Debug\net5.0\livecode3.deps.json
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode3\bin\Debug\net5.0\livecode3.runtimeconfig.json
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode3\bin\Debug\net5.0\livecode3.runtimeconfig.dev.json
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode3\bin\Debug\net5.0\livecode3.dll
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode3\bin\Debug\net5.0\ref\livecode3.dll
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode3\bin\Debug\net5.0\livecode3.pdb
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode3\obj\Debug\net5.0\livecode3.dll
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode3\obj\Debug\net5.0\ref\livecode3.dll
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode3\obj\Debug\net5.0\livecode3.pdb
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_05\livecode3\obj\Debug\net5.0\livecode3.genruntimeconfig.cache
