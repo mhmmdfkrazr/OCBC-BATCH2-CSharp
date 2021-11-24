@@ -1,0 +1,129 @@
+CREATE TABLE customers (
+customerNumber VARCHAR(10) PRIMARY KEY,
+customerName VARCHAR(50)  NOT NULL,
+contactLastName VARCHAR(20) NOT NULL,
+contactFirstName VARCHAR(30) NOT NULL,
+phone VARCHAR(15) NOT NULL,
+addressLine1 VARCHAR(100) NOT NULL,
+addressLine2 VARCHAR(100) NULL,
+city VARCHAR(20) NOT NULL,
+state VARCHAR(20) NOT NULL,
+postalCode VARCHAR(5) NOT NULL,
+country VARCHAR(20) NOT NULL,
+salesRepEmployeeNumber VARCHAR(10) NOT NULL,
+creditLimit VARCHAR(20) NOT NULL);
+
+CREATE TABLE products (
+productCode VARCHAR(10) PRIMARY KEY,
+productName VARCHAR(50) NOT NULL,
+productLine VARCHAR(20) NOT NULL,
+productScale VARCHAR(20) NOT NULL,
+productVendor VARCHAR(50) NOT NULL,
+productDescription VARCHAR(100) NULL,
+quantityInStock VARCHAR(10) NOT NULL,
+buyPrice VARCHAR(20) NOT NULL,
+MSRP VARCHAR(10) NOT NULL);
+
+CREATE TABLE productlines (
+productLine VARCHAR(20) PRIMARY KEY,
+textDescription VARCHAR(50) NULL,
+htmlDescription VARCHAR(50) NULL,
+image IMAGE NULL);
+
+CREATE TABLE orders (
+orderNumber VARCHAR(10) PRIMARY KEY,
+orderDate DATE NOT NULL,
+requiredDate DATE NOT NULL,
+shippedDate DATE NOT NULL,
+status VARCHAR(20) NOT NULL,
+comments VARCHAR(50) NULL,
+customerNumber VARCHAR(10) NOT NULL);
+
+CREATE TABLE orderdetails (
+orderNumber VARCHAR(10) NOT NULL,
+productCode VARCHAR(10) NOT NULL,
+quantityOrdered VARCHAR(10) NOT NULL,
+priceEach VARCHAR (20) NOT NULL,
+orderLineNumber VARCHAR(10) NOT NULL);
+
+CREATE TABLE payments (
+customerNumber VARCHAR(10) NOT NULL,
+checkNumber VARCHAR(10) NOT NULL,
+paymentDate DATE NOT NULL,
+amount VARCHAR (20) NOT NULL);
+
+CREATE TABLE employees (
+employeeNumber VARCHAR(10) PRIMARY KEY,
+lastName VARCHAR(20) NOT NULL,
+firstName VARCHAR(30) NOT NULL,
+extension VARCHAR(20) NOT NULL,
+email VARCHAR(20) NOT NULL,
+officeCode VARCHAR(10) NOT NULL,
+reportsTo VARCHAR(20) NOT NULL,
+jobTitle VARCHAR(20) NOT NULL);
+
+CREATE TABLE offices (
+officeCode VARCHAR(10) PRIMARY KEY,
+city VARCHAR(20) NOT NULL,
+phone VARCHAR(15) NOT NULL,
+addressLine1 VARCHAR(100) NOT NULL,
+addressLine2 VARCHAR(100) NULL,
+state VARCHAR(20) NOT NULL,
+country VARCHAR(20) NOT NULL,
+postalCode VARCHAR(5) NOT NULL,
+territory VARCHAR(20) NOT NULL);
+
+ALTER TABLE products 
+ADD FOREIGN KEY (productLine) REFERENCES productlines(productLine);
+
+ALTER TABLE orderdetails 
+ADD FOREIGN KEY (productCode) REFERENCES products(productCode);
+
+ALTER TABLE orderdetails 
+ADD FOREIGN KEY (orderNumber) REFERENCES orders(orderNumber);
+
+ALTER TABLE orders
+ADD FOREIGN KEY (customerNumber) REFERENCES customers(customerNumber);
+
+ALTER TABLE payments
+ADD FOREIGN KEY (customerNumber) REFERENCES customers(customerNumber);
+
+ALTER TABLE customers
+ADD FOREIGN KEY (salesRepEmployeeNumber) REFERENCES employees(employeeNumber);
+
+ALTER TABLE employees
+ADD FOREIGN KEY (officeCode) REFERENCES offices(officeCode);
+
+INSERT INTO offices VALUES 
+('OFC001','DKI Jakarta','0210784321','Jl. Jend. Sudirman A12','','Jakarta Selatan','Indonesia','10220','Karet Tengsin'),
+('OFC002','Jawa Barat','0213524413','Jl. Buah Batu C14','','Bandung Barat','Indonesia','11543','Kab. Bandung');
+
+INSERT INTO employees VALUES
+('EMP001','Susilo','Bagus','Kontrak','Susilo.B@zzz.com','OFC001','EMP003','Accounting Intern'),
+('EMP002','Linda','Putri','Kontrak','Linda.P@zzz.com','OFC001','EMP004','Finance Intern'),
+('EMP003','Cantika','Putri','Tetap','Cantika.P@zzz.com','OFC001','EMP010','Accounting'),
+('EMP004','Subianto','Chika','Tetap','Subianto.C@zzz.com','OFC001','EMP010','Finance'),
+('EMP005','Seto','Bagas','Kontrak','Seto.B@zzz.com','OFC001','EMP010','Sales'),
+('EMP006','Santoso','Selvi','Kontrak','Santoso.S@zzz.com','OFC001','EMP010','Customer Service'),
+('EMP007','Ghina','Bunga','Kontrak','Ghina.B@zzz.com','OFC001','EMP010','Customer Service'),
+('EMP008','Evans','Lexi','Tetap','Evans.L@zzz.com','OFC002','EMP009','IT'),
+('EMP009','Sina','Muhammad','Tetap','Sina.M@zzz.com','OFC002','EMP003','Head IT'),
+('EMP010','Azhar','Fikri','Kontrak','Bagus.S@zzz.com','OFC001','---','Head Office');
+
+INSERT INTO customers VALUES
+('CSM001','Nina Quen','Quen','Nina','082117453312','Jl. Gatot Subtroto','','DKI Jakarta','Jakarta Selatan','10233','Indonesia','EMP005','Rp. 20.000.000');
+
+INSERT INTO orders VALUES
+('ORD001','2021-01-11','2021-01-18','2021-01-29','Selesai','Tidak ada Comment','CSM001');
+
+INSERT INTO productlines VALUES
+('Kredit','-','-','');
+
+INSERT INTO products VALUES
+('PRD001','Vario 150','Kredit','Menengah','Honda','--','1','Rp. 19.000.000','--');
+
+INSERT INTO orderdetails VALUES
+('ORD001','PRD001','1','RP. 19.000.000','001');
+
+INSERT INTO payments VALUES
+('CSM001','001','2021-02-10','Rp. 19.000.000');
