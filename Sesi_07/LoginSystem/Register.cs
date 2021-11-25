@@ -26,7 +26,7 @@ namespace LoginSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            db.Execute("INSERT INTO `userdata` (names, username, password) VALUES (NULL, "+textBox1.Text+", "+textBox2.Text+", "+textBox3.Text+"");
+            db.Execute("INSERT INTO `user_info` (`id`, `NAMES`, `username`, `PASSWORD`) VALUES (NULL, '"+textBox1.Text+"', '"+textBox2.Text+"', '"+textBox3.Text+"')");
             this.Close();
         }
     }

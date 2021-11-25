@@ -20,7 +20,7 @@ namespace LoginSystem
         }
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            db.ExecuteSelect("SELECT + FROM `user_info` where username='" + tbPassword.Text + "' and password='" + tbPassword.Text + "'");
+            db.ExecuteSelect("SELECT + FROM `user_info` where username='" + tbUsername.Text + "' and password='" + tbPassword.Text + "'");
 
             if (db.Count() == 1)
             {
