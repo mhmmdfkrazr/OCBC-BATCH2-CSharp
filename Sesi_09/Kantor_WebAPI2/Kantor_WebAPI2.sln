@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kantor_WebAPI2", "Kantor_WebAPI2.csproj", "{31AD6A0C-096A-4313-8F18-0A5BCF882A4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31AD6A0C-096A-4313-8F18-0A5BCF882A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31AD6A0C-096A-4313-8F18-0A5BCF882A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31AD6A0C-096A-4313-8F18-0A5BCF882A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31AD6A0C-096A-4313-8F18-0A5BCF882A4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E1B86257-848C-4FE0-B731-AA961FB7147B}
+	EndGlobalSection
+EndGlobal
