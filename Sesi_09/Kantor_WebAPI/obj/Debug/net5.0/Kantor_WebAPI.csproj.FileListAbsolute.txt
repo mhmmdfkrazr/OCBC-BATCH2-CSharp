@@ -49,3 +49,8 @@ C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_09\Kantor_WebAPI\obj\Debug\net5
 C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_09\Kantor_WebAPI\obj\Debug\net5.0\ref\Kantor_WebAPI.dll
 C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_09\Kantor_WebAPI\obj\Debug\net5.0\Kantor_WebAPI.pdb
 C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_09\Kantor_WebAPI\obj\Debug\net5.0\Kantor_WebAPI.genruntimeconfig.cache
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_09\Kantor_WebAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_09\Kantor_WebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_09\Kantor_WebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_09\Kantor_WebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\mhmmd\Documents\OCBC NISP\BootCamp\Sesi_09\Kantor_WebAPI\obj\Debug\net5.0\Kantor_WebAPI.MvcApplicationPartsAssemblyInfo.cs
