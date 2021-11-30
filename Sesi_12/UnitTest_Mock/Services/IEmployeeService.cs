@@ -1,0 +1,11 @@
+using System.Threading.Tasks;
+using UnitTest_Mock.Models;
+
+namespace UnitTest_Mock.Services
+{
+    public interface IEmployeeService
+    {
+        Task<string> GetEmployeebyId(int EmpID);
+        Task<Employee> GetEmployeeDetails(int EmpID);
+    }
+}
