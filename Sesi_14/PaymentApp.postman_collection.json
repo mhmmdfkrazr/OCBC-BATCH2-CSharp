@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "4734a0f6-e1cb-46fb-a5c4-164ef187ca7c",
+		"name": "PaymentApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Regist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"mhmmdfkrazr\",\r\n    \"email\": \"mhmmdfkrazr@gmail.com\",\r\n    \"password\": \"@Azr170499\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://finalproject-payment.herokuapp.com/api/AuthManagement/Register",
+					"protocol": "https",
+					"host": [
+						"finalproject-payment",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"AuthManagement",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"mhmmdfkrazr@gmail.com\",\r\n    \"password\": \"@Azr170499\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://finalproject-payment.herokuapp.com/api/AuthManagement/Login",
+					"protocol": "https",
+					"host": [
+						"finalproject-payment",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"AuthManagement",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetData",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImE3YWI4MzBiLThkMTQtNDNlNy1hZjQxLWVkMjJlMWYxZjY4MCIsImVtYWlsIjoibWhtbWRma3JhenJAZ21haWwuY29tIiwic3ViIjoibWhtbWRma3JhenJAZ21haWwuY29tIiwianRpIjoiNTUxNjM3MGQtODgzOS00ZGQ5LTg1MGUtM2UwNzY1MjJkZmNjIiwibmJmIjoxNjM4MzQ5NDE4LCJleHAiOjE2MzgzNTAwMTgsImlhdCI6MTYzODM0OTQxOH0.nmenFwjv0ziJf597M1afbJG9rdcY5QZUsH_KuK_mJOw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CardOwnerName\": \"Fikri\",\r\n    \"CardNumber\": \"1774839\",\r\n    \"expirationDate\": \"2025-10-10\",\r\n    \"securityCode\": \"17483992\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://finalproject-payment.herokuapp.com/api/PaymentDetails",
+					"protocol": "https",
+					"host": [
+						"finalproject-payment",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"PaymentDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImE3YWI4MzBiLThkMTQtNDNlNy1hZjQxLWVkMjJlMWYxZjY4MCIsImVtYWlsIjoibWhtbWRma3JhenJAZ21haWwuY29tIiwic3ViIjoibWhtbWRma3JhenJAZ21haWwuY29tIiwianRpIjoiMmE0YzE1NDAtM2NmYi00YWJkLTk2YWQtMDlkZTI5ZjQ4NDU0IiwibmJmIjoxNjM4MzQ3OTU4LCJleHAiOjE2MzgzNDg1NTgsImlhdCI6MTYzODM0Nzk1OH0.NnQkDQ_smIVwsNiGnHm3AK7xBVOZJ6fUo89Aej9aTxE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cardOwnerName\": \"Melin\",\r\n    \"cardNumber\": \"1286489\",\r\n    \"expirationDate\": \"2030-10-22\",\r\n    \"securityCode\": \"46478378\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://finalproject-payment.herokuapp.com/api/PaymentDetails",
+					"protocol": "https",
+					"host": [
+						"finalproject-payment",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"PaymentDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit data",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImE3YWI4MzBiLThkMTQtNDNlNy1hZjQxLWVkMjJlMWYxZjY4MCIsImVtYWlsIjoibWhtbWRma3JhenJAZ21haWwuY29tIiwic3ViIjoibWhtbWRma3JhenJAZ21haWwuY29tIiwianRpIjoiNTUxNjM3MGQtODgzOS00ZGQ5LTg1MGUtM2UwNzY1MjJkZmNjIiwibmJmIjoxNjM4MzQ5NDE4LCJleHAiOjE2MzgzNTAwMTgsImlhdCI6MTYzODM0OTQxOH0.nmenFwjv0ziJf597M1afbJG9rdcY5QZUsH_KuK_mJOw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"paymentDetailId\": 2,\r\n        \"cardOwnerName\": \"Melin Meliyani\",\r\n        \"cardNumber\": \"1286489\",\r\n        \"expirationDate\": \"2030-10-22T00:00:00\",\r\n        \"securityCode\": \"46478378\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://finalproject-payment.herokuapp.com/api/PaymentDetails/2",
+					"protocol": "https",
+					"host": [
+						"finalproject-payment",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"PaymentDetails",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete data",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImE3YWI4MzBiLThkMTQtNDNlNy1hZjQxLWVkMjJlMWYxZjY4MCIsImVtYWlsIjoibWhtbWRma3JhenJAZ21haWwuY29tIiwic3ViIjoibWhtbWRma3JhenJAZ21haWwuY29tIiwianRpIjoiNTUxNjM3MGQtODgzOS00ZGQ5LTg1MGUtM2UwNzY1MjJkZmNjIiwibmJmIjoxNjM4MzQ5NDE4LCJleHAiOjE2MzgzNTAwMTgsImlhdCI6MTYzODM0OTQxOH0.nmenFwjv0ziJf597M1afbJG9rdcY5QZUsH_KuK_mJOw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://finalproject-payment.herokuapp.com/api/PaymentDetails/2",
+					"protocol": "https",
+					"host": [
+						"finalproject-payment",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"PaymentDetails",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetbyID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImE3YWI4MzBiLThkMTQtNDNlNy1hZjQxLWVkMjJlMWYxZjY4MCIsImVtYWlsIjoibWhtbWRma3JhenJAZ21haWwuY29tIiwic3ViIjoibWhtbWRma3JhenJAZ21haWwuY29tIiwianRpIjoiNzYzZjg5ODYtNWZiNC00ZjgyLWJlYjEtYmY3NjVhOWZiYTExIiwibmJmIjoxNjM4MzQ5NzcwLCJleHAiOjE2MzgzNTAzNzAsImlhdCI6MTYzODM0OTc3MH0.sSPuRyI1hCRkAotfJ_dsOR1vjNuFnbOpz4aO_pWATM0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://finalproject-payment.herokuapp.com/api/PaymentDetails/1",
+					"protocol": "https",
+					"host": [
+						"finalproject-payment",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"PaymentDetails",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
